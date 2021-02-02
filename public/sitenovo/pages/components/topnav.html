@@ -1,0 +1,205 @@
+<!-- Navigation -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+  crossorigin="anonymous">
+
+
+<link href="../css/icons.css" rel="stylesheet">
+
+<nav id="web_navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="../img/Educaz_preto.png" style="width:auto;height:50px" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_Responsive" aria-controls="navbarResponsive"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <i class="icon-hamburger-menu-2"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar_Responsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <div class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="topnav_cursos" data-toggle="dropdown">cursos
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu orange-background">
+              <li>
+                <a href="cursos.html">cursos online</a>
+              </li>
+              <li>
+                <a href="cursos-presenciais.html">cursos presenciais</a>
+              </li>
+              <li>
+                <a href="cursos-hibridos.html">cursos híbridos</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="topnav_eventos" href="eventos.html">eventos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="topnav_trilha" href="trilha-conhecimento.html">trilha de conhecimento</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="topnav_assinaturas" href="assinaturas.html">assinaturas</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="topnav_professores" data-toggle="dropdown">professores
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu orange-background">
+              <li>
+                <a href="professores.html">nossos professores</a>
+              </li>
+              <li>
+                <a href="seja-professor.html">quero ser um professor</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="topnav_shop" href="meu-carrinho.html" id="nav_link_shop">
+            <span class="icon-shop-car" style="font-size:25px;"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="displayLogin()" id="topnav_users" href="#" data-toggle="modal" data-target="#loginModal">
+            <span class="icon-user" style="font-size:25px;"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav id="mobile_navbar">
+  <div class="container">
+    <div id="top_inner">
+        <div id="menu" class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-bars orange-font-color"></i></a>
+            <div class="dropdown-menu" id="mobile_dropdown">  
+                    <a href="">Cursos online</a><br/> 
+                    <a href="">Cursos presenciais</a><br/>  
+                    <a href="">Cursos híbridos</a><br/>  
+                    <a href="">Eventos</a><br/>  
+                    <a href="">Trilhas de conhecimento</a><br/>  
+                    <a href="">Seja um assinante</a><br/>  
+                    <a href="">Professores</a><br/>  
+                    <a href="">Meu carrinho</a><br/>  
+                    <a href="">Meu perfil</a><br/>  
+                    <a href="">Certificado: conferência de autenticidade</a><br/>        
+                    <a href="">Dúvidas</a><br/><br/><br/>
+                    
+                    <a href="">Política de Privacidade</a><br/>  
+                    <a href="">Termos e condições de uso</a><br/>  
+
+            </div>
+        </div>
+        <div id="logo">
+          <a href=""><img src="../img/Educaz_preto.png"/></a>
+        </div>
+        <div id="car">
+            <a href="meu-carrinho.html"><span class="icon-shop-car"></span></a>
+          </div>
+    </div>
+    
+  </div>
+</nav>
+
+<div class="modal fade" id="loginModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">X</button>
+      </div>
+      <div class="modal-body">
+        <div class="inner">
+          <div class="logo">
+            <img src="../img/Educaz_preto.png" width="100%" height="auto" />
+          </div>
+          <div id="login_screen">
+            <span class="login-title">Faça seu login</span>
+            <form id="login_form">
+              <div>
+                <input type="email" id="login_email" name="login_email" placeholder="Seu email" required />
+              </div>
+              <div>
+                <input type="password" id="login_password" name="login_password" placeholder="Sua senha" required />
+              </div>
+              <div class="not-border">
+                <input style="width:20px;" type="checkbox" name="login_remember" id="login_remember" />
+                <label for="login_remember">Lembrar minha senha</label>
+              </div>
+
+              <div class="not-border">
+                <button class="orange-background" type="submit" id="login_button">entrar</button>
+              </div>
+            </form>
+
+            <div id="login_social_media">
+              <span class="entrar">Entrar com: </span>
+              <a href="">
+                <span class="icon-facebook icon"></span>
+              </a>
+              <a href="">
+                <span class="icon-google-plus icon"></span>
+              </a>
+            </div>
+
+            <div id="bottom_links">
+              <a href="#" onclick="displayRecover()">Esqueci minha senha</a>
+              <br/>
+              <br/>
+              <a href="cadastro.html">Ainda não tenho cadastro</a>
+            </div>
+          </div>
+
+          <div id="recover_screen" style="display:none">
+            <span class="login-title">Recuperação de senha</span>
+            <form id="recover_form">
+              <div>
+                <input type="email" id="recover_email" name="login_email" placeholder="Seu email" required />
+              </div>
+              <div>
+                <input type="text" id="recover_cpf" name="recover_cpf" placeholder="Seu CPF" required />
+              </div>
+              <div class="not-border">
+                <span>
+                  <small>Você receberá um email com a senha provisória para realizar o acesso ao seu perfil. Essa senha deverá ser
+                    alterada na opção "editar perfil" desse app.</small>
+                </span>
+              </div>
+
+              <div class="not-border">
+                <button class="orange-background" type="submit" id="recover_button">enviar</button>
+              </div>
+            </form>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+  function displayRecover() {
+    $("#login_screen").hide();
+    $("#recover_screen").show();
+  }
+
+  function displayLogin() {
+    $("#login_screen").show();
+    $("#recover_screen").hide();
+  }
+
+
+</script>

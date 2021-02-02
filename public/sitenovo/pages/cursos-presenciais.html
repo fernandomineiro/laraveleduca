@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Educaz - Os melhores cursos certificados</title>
+
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../css/shop-homepage.css" rel="stylesheet">
+
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+
+  <script src="../js/includeComponents.js"></script>
+  <script src="../js/elementsHandler.js"></script>
+
+</head>
+
+<body id="page-cursos-presenciais">
+  <header>
+    <div data-include="topnav"></div>
+
+  </header>
+  <div class="banner-header">
+      <img src="../img/cursos_presenciais_header_background.png" />
+      <div class="container header">
+          <div id="cursos_header">
+              <h2>Cursos presenciais</h2>
+
+          </div>
+      </div>
+  </div>
+
+  <!-- Page Content -->
+
+
+  <section id="section_content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3" id="sidebar" data-include="sidebar"></div>
+        <div class="col-lg-9">
+          <div class="row sort-order">
+            <div class="col-lg-2 col-md-2 col-sm-12 col-12" id="sort">
+              <div class="dropdown">
+                <button href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ordenar
+                  <span class="caret"></span>
+                </button>
+                <div class="dropdown-menu">
+                  <form id="form_curso_sort_order_dropdown">
+                    <div class="radio">
+                      <input id="sort_az" name="sort-az" type="radio" checked>
+                      <label for="sort_az" class="radio-label">A-Z</label>
+                    </div>
+                    <div class="radio">
+                      <input id="sort_za" name="sort-az" type="radio">
+                      <label for="sort_za" class="radio-label">Z-A</label>
+                    </div>
+                    <div class="radio">
+                      <input id="sort_mais_vendidos" name="sort-other" type="radio" checked>
+                      <label for="sort_mais_vendidos" class="radio-label">mais vendidos</label>
+                    </div>
+                    <div class="radio">
+                      <input id="sort_mais_recente" name="sort-other" type="radio">
+                      <label for="sort_mais_recente" class="radio-label">mais recentes</label>
+                    </div>
+                    <div class="radio">
+                      <input id="sort_promocoes" name="sort-other" type="radio">
+                      <label for="sort_promocoes" class="radio-label">promoções</label>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-12">
+              <div class="dropdown">
+                <button href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">preço
+                  <span class="caret"></span>
+                </button>
+                <div class="dropdown-menu">
+                  <form id="form_curso_sort_price_dropdown">
+                    <div class="range-slider">
+                      <input id="rs-range-line" class="rs-range" type="range" value="0" min="0" max="200">
+                      <span id="rs-bullet" class="rs-label">0</span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 col-12">
+              <button>trilha do conhecimento</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 col-12 search-div">
+              <form id="form_curso_sort_order_search">
+                <input placeholder="pesquisar" />
+                <span class="icon-search"></span>
+              </form>
+            </div>
+            <div class="col-lg-1 col-md-6 col-sm-6 col-6 view-options hide-mobile">
+              <button onclick="activate('list')" style="background-color:transparent;color: #DBDADA;font-size:25px;margin-top: -5px;">
+                <span class="icon-hamburger-menu-1"></span>
+              </button>
+            </div>
+            <div class="col-lg-1 col-md-6 col-sm-6 col-6 hide-mobile">
+              <button onclick="activate('grid')" style="background-color:transparent;color: #DBDADA;font-size:25px;margin-top: -5px;">
+                <span id="button_grid" class="icon-plus-filled active"></span>
+              </button>
+            </div>
+          </div>
+          <div class="row grid slickear curso-p" style="justify-content:space-around;">
+            <div class="padding-5">
+              <div class="box-shadow course-card-presencial">
+                <div class="card-inner">
+                  <a href="" class="course-link">
+                    <div class="card-image-presencial" style="height:237px;">
+                      <span class="card-presencial-city">São Paulo, SP</span>
+                      <img src="../img/course-presencial-list.png" width="auto" height="auto" />
+                    </div>
+                  </a>
+                </div>
+                <div class="course-card-info">
+                  <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                  <p class="teacher-name">Sergio Nogueira</p>
+                  <p class="course-presencial-date">15 de janeiro de 2019</p>
+                  <div class="course-payment-info row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 course-price-call">
+                      <span class="course-price orange-font-color">R$ 580,00</span>
+                      <br/>
+                      <a href="" class="assinatura-link">
+                        <span class="course-call orange-font-color">Garanta sua vaga!</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="padding-5">
+              <div class="box-shadow course-card-presencial">
+                <div class="card-inner">
+                  <a href="" class="course-link">
+                    <div class="card-image-presencial" style="height:237px;">
+                      <span class="card-presencial-city">São Paulo, SP</span>
+                      <img src="../img/course-presencial-list.png" width="auto" height="auto" />
+                    </div>
+                  </a>
+                </div>
+                <div class="course-card-info">
+                  <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                  <p class="teacher-name">Sergio Nogueira</p>
+                  <p class="course-presencial-date">15 de janeiro de 2019</p>
+                  <div class="course-payment-info row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 course-price-call">
+                      <span class="course-price orange-font-color">R$ 580,00</span>
+                      <br/>
+                      <a href="" class="assinatura-link">
+                        <span class="course-call orange-font-color">Garanta sua vaga!</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="padding-5">
+              <div class="box-shadow course-card-presencial">
+                <div class="card-inner">
+                  <a href="" class="course-link">
+                    <div class="card-image-presencial" style="height:237px;">
+                      <span class="card-presencial-city">São Paulo, SP</span>
+                      <img src="../img/course-presencial-list.png" width="auto" height="auto" />
+                    </div>
+                  </a>
+                </div>
+                <div class="course-card-info">
+                  <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                  <p class="teacher-name">Sergio Nogueira</p>
+                  <p class="course-presencial-date">15 de janeiro de 2019</p>
+                  <div class="course-payment-info row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 course-price-call">
+                      <span class="course-price orange-font-color">R$ 580,00</span>
+                      <br/>
+                      <a href="" class="assinatura-link">
+                        <span class="course-call orange-font-color">Garanta sua vaga!</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="padding-5">
+              <div class="box-shadow course-card-presencial">
+                <div class="card-inner">
+                  <a href="" class="course-link">
+                    <div class="card-image-presencial" style="height:237px;">
+                      <span class="card-presencial-city">São Paulo, SP</span>
+                      <img src="../img/course-presencial-list.png" width="auto" height="auto" />
+                    </div>
+                  </a>
+                </div>
+                <div class="course-card-info">
+                  <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                  <p class="teacher-name">Sergio Nogueira</p>
+                  <p class="course-presencial-date">15 de janeiro de 2019</p>
+                  <div class="course-payment-info row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 course-price-call">
+                      <span class="course-price orange-font-color">R$ 580,00</span>
+                      <br/>
+                      <a href="" class="assinatura-link">
+                        <span class="course-call orange-font-color">Garanta sua vaga!</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row" style="margin-top:50px;display:flex;">
+            <a href="">
+              <span class="icon-user-check" style="font-size:50px;color:#F2652A"></span>
+              <span style="color:#F2652A;font-family:encodeSansCondensed-Bold;margin:auto;">Veja todos os cursos presenciais</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <div data-include="footer"></div>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+<script>
+  var rangeSlider = document.getElementById("rs-range-line");
+  var rangeBullet = document.getElementById("rs-bullet");
+  rangeSlider.addEventListener("input", showSliderValue, false);
+
+  function showSliderValue() {
+    rangeBullet.innerHTML = rangeSlider.value;
+    var bulletPosition = (rangeSlider.value / rangeSlider.max);
+    rangeBullet.style.left = (bulletPosition * 80) + "px";
+  }
+
+  function activate(el) {
+    console.log(el);
+    if (el == 'grid') {
+      $(".list").addClass('grid');
+      $(".list").removeClass('list');
+      $("#button_grid").addClass('active');
+      $(".view-options .icon-hamburger-menu-1").removeClass('active');
+    } else {
+      $(".grid").addClass('list');
+      $(".grid").removeClass('grid');
+      $("#button_grid").removeClass('active');
+      $(".view-options .icon-hamburger-menu-1").addClass('active');
+    }
+  }
+
+  var interval = setInterval(function () {
+    if ($("#topnav_cursos").length) {
+      $("#topnav_cursos").addClass("orange-font-color");
+      clearInterval(interval);
+    }
+  }, 100);
+
+
+  var slickeado = false;   
+    function conditionalSlick() {
+        if ($(window).width() <= 991 && !slickeado) {
+            slickeado = true;
+            console.log("entrei");            
+            $(".slickear").slick(
+                {
+                    infinite: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    responsive: [
+                        {
+                            breakpoint: 769,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                infinite: false,
+                                dots: false
+                            }
+                        }
+                    ]
+                }
+            );
+        } else {
+            if ($(window).width() > 991 && slickeado) {
+                $(".slickear").slick('unslick');
+                slickeado = false;
+               
+            }
+        }
+    }
+
+    conditionalSlick();
+    $(window).resize(function () {
+        conditionalSlick();
+    });
+
+</script>
+
+<style>
+  #mobile_navbar{
+        background-color:rgba(255,255,255,.7) !important;
+        
+    }
+</style>
+
+</html>

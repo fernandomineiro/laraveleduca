@@ -1,0 +1,62 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    image: digitalocean.com/php
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - .:/var/www
+      - .docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    links:
+      - mysql_educaz
+      - redis
+    depends_on:
+      - mysql_educaz
+
+  webserver:
+    image: nginx:alpine
+    container_name: webserver
+    restart: unless-stopped
+    tty: true
+    depends_on:
+      - mysql_educaz
+    volumes:
+      - .:/var/www
+      - .docker/nginx/conf.d/:/etc/nginx/conf.d/
+    ports:
+      - "8000:80"
+      - "443:443"
+
+  mysql_educaz:
+    image: mysql:5.7
+    hostname: mysql.educaz
+    restart: always
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: dev_educaz
+      MYSQL_USER: root-unibrasil
+      MYSQL_PASSWORD: unibrasil
+      MYSQL_ROOT_PASSWORD: rooTUn1BrALL
+      MYSQL_HOST: mysql_educaz
+
+  redis:
+    image: redis:4.0-alpine
+    ports:
+      - 16379:6379
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: mysql_educaz
+
+#Volumes
+volumes:
+  dbdata:
+    driver: local

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Educaz - Os melhores cursos certificados</title>
+
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/shop-homepage.css" rel="stylesheet">
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+
+    <script src="../js/includeComponents.js"></script>
+    <script src="../js/elementsHandler.js"></script>
+
+</head>
+
+<body id="page-cursos-categoria" class="cursos-presenciais-categoria">
+    <header>
+        <div data-include="topnav"></div>
+
+        <div class="container">
+            <h2>Cursos híbridos</h2>
+            <span class="categoria">Comunicação</span>
+        </div>
+    </header>
+
+    <section id="page-cursos-presenciais">
+        <div class="container cursos-hibridos-categoria cursos-hibridos" id="page-cursos">
+            <div class="row sort-order">
+                <div class="col-lg-2 col-md-12 col-sm-12 col-12" id="category">
+                    <div class="dropdown">
+                        <button href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">categorias
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Arte & Design</a>
+                            </li>
+                            <li>
+                                <a href="#">Beleza</a>
+                            </li>
+                            <li>
+                                <a href="#">Comunicação</a>
+                            </li>
+                            <li>
+                                <a href="#">Direito</a>
+                            </li>
+                            <li>
+                                <a href="#">Economia</a>
+                            </li>
+                            <li>
+                                <a href="#">Educação</a>
+                            </li>
+                            <li>
+                                <a href="#">Engenharia</a>
+                            </li>
+                            <li>
+                                <a href="#">Gastronomia</a>
+                            </li>
+                            <li>
+                                <a href="#">Gestão & Negócios</a>
+                            </li>
+                            <li>
+                                <a href="#">Inovação & Empreendedorismo</a>
+                            </li>
+                            <li>
+                                <a href="#">Medicina</a>
+                            </li>
+                            <li>
+                                <a href="#">Meio Ambiente</a>
+                            </li>
+                            <li>
+                                <a href="#">Moda</a>
+                            </li>
+                            <li>
+                                <a href="#">Pedagogia</a>
+                            </li>
+                            <li>
+                                <a href="#">Publicidade & Marketing</a>
+                            </li>
+                            <li>
+                                <a href="#">Saúde</a>
+                            </li>
+                            <li>
+                                <a href="#">Seguros</a>
+                            </li>
+                            <li>
+                                <a href="#">Sem categoria</a>
+                            </li>
+                            <li>
+                                <a href="#">TI & Tecnologia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 col-12" id="sort">
+                    <div class="dropdown">
+                        <button href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ordenar
+                            <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <form id="form_curso_sort_order_dropdown">
+                                <div class="radio">
+                                    <input id="sort_az" name="sort-az" type="radio" checked>
+                                    <label for="sort_az" class="radio-label">A-Z</label>
+                                </div>
+                                <div class="radio">
+                                    <input id="sort_za" name="sort-az" type="radio">
+                                    <label for="sort_za" class="radio-label">Z-A</label>
+                                </div>
+                                <div class="radio">
+                                    <input id="sort_mais_vendidos" name="sort-other" type="radio" checked>
+                                    <label for="sort_mais_vendidos" class="radio-label">mais vendidos</label>
+                                </div>
+                                <div class="radio">
+                                    <input id="sort_mais_recente" name="sort-other" type="radio">
+                                    <label for="sort_mais_recente" class="radio-label">mais recentes</label>
+                                </div>
+                                <div class="radio">
+                                    <input id="sort_promocoes" name="sort-other" type="radio">
+                                    <label for="sort_promocoes" class="radio-label">promoções</label>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-6 col-sm-12 col-12">
+                    <div class="dropdown">
+                        <button href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">preço
+                            <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <form id="form_curso_sort_price_dropdown">
+                                <div class="range-slider">
+                                    <input id="rs-range-line" class="rs-range" type="range" value="0" min="0" max="200">
+                                    <span id="rs-bullet" class="rs-label">0</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 col-12">
+                    <button>trilha do conhecimento</button>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 search-div">
+                    <form id="form_curso_sort_order_search">
+                        <input placeholder="pesquisar" />
+                        <span class="icon-search"></span>
+                    </form>
+                </div>
+                <div class="col-lg-1 col-md-6 col-sm-6 col-6 view-options hide-mobile">
+                    <button onclick="activate('list')" style="background-color:transparent;color: #DBDADA;font-size:25px;margin-top: -5px;">
+                        <span class="icon-hamburger-menu-1"></span>
+                    </button>
+                </div>
+                <div class="col-lg-1 col-md-6 col-sm-6 col-6 hide-mobile">
+                    <button onclick="activate('grid')" style="background-color:transparent;color: #DBDADA;font-size:25px;margin-top: -5px;">
+                        <span id="button_grid" class="icon-plus-filled active"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="row" id="search_criteria">
+                    <p  class="col-lg-12 col-md-12 col-sm-12 col-12"> 
+                        <span id="order1">A-Z</span>,
+                        <span id="order2">mais vendidos</span>, de R$
+                        <span id="value1">12,00</span> a R$
+                        <span>65,00</span>
+                    </p>
+                </div>
+            <div class="row grid" id="view_type">
+                <div href="" class="outter">
+                    <div class="box-shadow course-card item">
+                        <div class="card-inner">
+                            <a href="curso-hibrido-sobre.html" class="course-link">
+                                <div class="card-image">
+                                    <img src="../img/course-presencial-list.png" width="auto" height="auto" />
+                                    <span class="card-sticker">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                            xml:space="preserve">
+                                            <polygon fill="#F2652A" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                            <foreignObject x="3" y="1" width="80" height="20">
+                                                <span xmlns="http://www.w3.org/1999/xhtml" class="cidade">
+                                                    São Paulo, SP
+                                                </span>
+                                            </foreignObject>
+                                        </svg>
+                                    </span>
+                                    <a href="" class="card-favorite">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                            height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                            xml:space="preserve">
+
+                                            <g>
+                                                <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                       c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                       c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                       C11.034,20.796,10.972,20.817,10.909,20.817z" />
+                                                <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                       c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                       c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                       C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                       c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                       c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                       l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z" />
+                                            </g>
+
+                                        </svg>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-bottom">
+                            <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                            <p class="teacher-name">Sergio Nogueira</p>
+                            <p class="info1">janeiro a março de 2019</p>
+                            <p class="info2">50 % de curso online e 50% de curso presencial</p>
+                            <br>
+                            <div class="course-payment-info row">
+                                <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                    <span class="course-price orange-font-color">R$ 580,00</span>
+                                    <br/>
+                                    <a href="curso-hibrido-sobre.html" class="assinatura-link">
+                                        <span class="course-call orange-font-color">Garanta sua vaga!</span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                    <a href="" class="course-share-link">
+                                        <span class="icon-share orange-font-color"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div href="" class="outter">
+                        <div class="box-shadow course-card item">
+                            <div class="card-inner">
+                                <a href="curso-hibrido-sobre.html" class="course-link">
+                                    <div class="card-image">
+                                        <img src="../img/course-presencial-list.png" width="auto" height="auto" />
+                                        <span class="card-sticker">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                xml:space="preserve">
+                                                <polygon fill="#F2652A" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                <foreignObject x="3" y="1" width="80" height="20">
+                                                    <span xmlns="http://www.w3.org/1999/xhtml" class="cidade">
+                                                        São Paulo, SP
+                                                    </span>
+                                                </foreignObject>
+                                            </svg>
+                                        </span>
+                                        <a href="" class="card-favorite">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                xml:space="preserve">
+    
+                                                <g>
+                                                    <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                           c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                           c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                           C11.034,20.796,10.972,20.817,10.909,20.817z" />
+                                                    <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                           c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                           c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                           C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                           c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                           c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                           l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z" />
+                                                </g>
+    
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-bottom">
+                                <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                <p class="teacher-name">Sergio Nogueira</p>
+                                <p class="info1">janeiro a março de 2019</p>
+                                <p class="info2">50 % de curso online e 50% de curso presencial</p>
+                                <br>
+                                <div class="course-payment-info row">
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                        <span class="course-price orange-font-color">R$ 580,00</span>
+                                        <br/>
+                                        <a href="curso-hibrido-sobre.html" class="assinatura-link">
+                                            <span class="course-call orange-font-color">Garanta sua vaga!</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                        <a href="" class="course-share-link">
+                                            <span class="icon-share orange-font-color"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div href="" class="outter">
+                    <div class="box-shadow course-card item">
+                        <div class="card-inner">
+                            <a href="curso-hibrido-sobre.html" class="course-link">
+                                <div class="card-image">
+                                    <img src="../img/course-presencial-list.png" width="auto" height="auto" />
+                                    <span class="card-sticker">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                            xml:space="preserve">
+                                            <polygon fill="#F2652A" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                            <foreignObject x="3" y="1" width="80" height="20">
+                                                <span xmlns="http://www.w3.org/1999/xhtml" class="cidade">
+                                                    São Paulo, SP
+                                                </span>
+                                            </foreignObject>
+                                        </svg>
+                                    </span>
+                                    <a href="" class="card-favorite">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                            height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                            xml:space="preserve">
+
+                                            <g>
+                                                <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                           c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                           c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                           C11.034,20.796,10.972,20.817,10.909,20.817z" />
+                                                <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                           c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                           c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                           C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                           c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                           c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                           l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z" />
+                                            </g>
+
+                                        </svg>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-bottom">
+                            <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                            <p class="teacher-name">Sergio Nogueira</p>
+                            <p class="info1">janeiro a março de 2019</p>
+                            <p class="info2">50 % de curso online e 50% de curso presencial</p>
+                            <br>
+                            <div class="course-payment-info row">
+                                <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                    <span class="course-price orange-font-color">R$ 580,00</span>
+                                    <br/>
+                                    <a href="curso-hibrido-sobre.html" class="assinatura-link">
+                                        <span class="course-call orange-font-color">Garanta sua vaga!</span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                    <a href="" class="course-share-link">
+                                        <span class="icon-share orange-font-color"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row" id="pagination">
+                <div class="col-lg-3 col-md-3 col-sm-0 col-0"></div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+                    <button id="pagination_prev">página anterior</button>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+                    <form id="form_pagination">
+                        <input placeholder="1" name="page" />
+                        <span>de</span>
+                        <span id="pagination_total_pages">125</span>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+                    <button id="pagination_next">página anterior</button>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-0 col-0"></div>
+            </div>
+            <div class="row" id="load_more" style="margin-top: 60px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <a href="">carregar mais cursos</a>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Page Content -->
+
+
+    <section id="section_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <div data-include="footer"></div>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+<script>
+    var rangeSlider = document.getElementById("rs-range-line");
+    var rangeBullet = document.getElementById("rs-bullet");
+    rangeSlider.addEventListener("input", showSliderValue, false);
+
+    function showSliderValue() {
+        rangeBullet.innerHTML = rangeSlider.value;
+        var bulletPosition = (rangeSlider.value / rangeSlider.max);
+        rangeBullet.style.left = (bulletPosition * 80) + "px";
+    }
+
+    function activate(el) {
+        console.log(el);
+        if (el == 'grid') {
+            $("#view_type").removeClass('list');
+            $("#view_type").addClass('grid');
+            $("#button_grid").addClass('active');
+            $(".view-options .icon-hamburger-menu-1").removeClass('active');
+        } else {
+            $("#view_type").addClass('list');
+            $("#view_type").removeClass('grid');
+            $("#button_grid").removeClass('active');
+            $(".view-options .icon-hamburger-menu-1").addClass('active');
+        }
+    }
+
+
+    var interval = setInterval(function(){
+        if($("#topnav_cursos").length){
+            $("#topnav_cursos").addClass("orange-font-color");
+            clearInterval(interval);
+        }
+    },100);
+
+    $(window).resize(function () {
+        isMobile();
+    });
+    isMobile();
+    function isMobile() {
+        if ($(window).width() <= 991) {
+            activate('list');
+            $(".view-options").hide();
+        } else {
+            $(".view-options").show();
+        }
+    }
+</script>
+
+<style>
+    #mobile_navbar{
+        background-color:#DBDADA !important;
+        
+    }
+</style>
+
+</html>

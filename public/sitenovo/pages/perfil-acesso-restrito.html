@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Educaz - Os melhores cursos certificados</title>
+
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/shop-homepage.css" rel="stylesheet">
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+
+    <script src="../js/includeComponents.js"></script>
+    <script src="../js/elementsHandler.js"></script>
+    <script src="../js/circle-progress.js"></script>
+    <script src="https://underscorejs.org/underscore.js"></script>
+
+</head>
+
+<body id="page-agenda" class="page-perfil-acesso-restrito">
+
+    <header>
+        <div data-include="topnav"></div>
+
+
+
+    </header>
+    <section id="main_content">
+        <div class="row" style="width:100%;">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 left-menu">
+                <div class="orange-background menu-container">
+                    <ul class="ul-container">
+                        <li>
+                            <a href="" class="level1 current">Meu perfil</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Criar curso</a>
+                            <ul>
+                                <li>
+                                    <a href="" class="level2">Online</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Presencial</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Híbrido</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Evento</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Meus cursos</a>
+                            <ul>
+                                <li>
+                                    <a href="" class="level2">Online</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Presenciais</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Híbridos</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Agenda de cursos</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Eventos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Status de aprovação</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Agenda de gravação</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Relatórios e gráficos</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Lista de presença</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Tutoria</a>
+                            <ul>
+                                <li>
+                                    <a href="" class="level2">Mensagens:
+                                        <span id="messages">3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Trabalhos</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li style="margin-top:20px;">
+                            <a href="" class="level1">X &nbsp; Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-12" style="max-width:810px;margin-top:30px;" id="page-cadastro">
+                <div class="title orange-font-color">Meu perfil
+                    <span id="name">Téo Medina</span>
+                </div>
+                <div class="row" style="margin-top:40px;">
+                    <div class="image-container col-lg-3 col-md-3 col-sm-3 col-12">
+                        <img src="../img/teacher_image.png" width="100%" height="auto" />
+                        <div>
+                            <a href="" class="orange-font-color">editar foto</a>
+                        </div>
+                    </div>
+                    <div class="main-row col-lg-9 col-md-9 col-sm-9 col-12">
+                        <form id="cadastro_form">
+                            <div class="title not-border" style="margin-top:0 !important;">Dados pessoais</div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">Nome</div>
+                                <input class="col-lg-6 col-md-6 col-sm-6 col-6" type="text" id="first_name" name="first_name" value="Téo">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">Sobrenome</div>
+                                <input type="text" id="last_name" name="last_name" value="Medina">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">CPF</div>
+                                <input type="text" id="cpf" name="cpf" value="288.288.288-08">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">Data de nascimento</div>
+                                <input type="date" id="birthday" name="birthday" value="1988-08-28">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">CEP</div>
+                                <input type="text" id="address_cep" name="address_cep" value="58888-08">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">Rua</div>
+                                <input type="text" id="address_street" name="address_street" value="Rua Tal">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">Número</div>
+                                <input type="text" id="address_number" name="address_number" value="88">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">Complemento</div>
+                                <input type="text" id="address_complemento" name="address_complemento" value="apto 104">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">Cidade</div>
+                                <input type="text" id="address_city" name="address_city" value="São Paulo">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">Estado</div>
+                                <input type="text" id="address_state" name="address_state" value="SP">
+                            </div>
+                            <div class="title not-border">Áreas de interesse</div>
+                            <div class="row not-border areas">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12 not-border">
+                                    <div class="not-border">
+                                        <input id="art_design" name="art_design" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="art_design">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Arte & Design</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="beleza" name="beleza" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="beleza">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Beleza</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="comunicacao" name="comunicacao" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="comunicacao">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Comunicação</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="direito" name="direito" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="direito">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Direito</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="economia" name="economia" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="economia">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Economia</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="educacao" name="educacao" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="educacao">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Educação</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="engenharia" name="engenharia" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="engenharia">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Engenharia</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="gastronomia" name="gastronomia" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="gastronomia">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Gastronomia</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="gestao_negocios" name="gestao_negocios" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="gestao_negocios">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Gestão & Negócios</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="inovacao_empreendedorismo" name="inovacao_empreendedorismo" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="inovacao_empreendedorismo">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Inovação & Empreendedorismo</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12 not-border">
+                                    <div class="not-border">
+                                        <input id="medicina" name="medicina" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="medicina">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Medicina</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="meio_ambiente" name="meio_ambiente" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="meio_ambiente">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Meio Ambiente</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="moda" name="moda" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="moda">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Moda</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="pedagogia" name="pedagogia" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="pedagogia">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Pedagogia</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="publicidade_marketing" name="publicidade_marketing" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="publicidade_marketing">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Publicidade & Marketing</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="seguros" name="seguros" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="seguros">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Seguros</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="sem_categoria" name="sem_categoria" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="sem_categoria">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>Sem categoria</span>
+                                    </div>
+
+                                    <div class="not-border">
+                                        <input id="ti_tecnologia" name="ti_tecnologia" type="checkbox" class="cbx-id" />
+                                        <label class="cbx" for="ti_tecnologia">
+                                            <div class="flip not-border">
+                                                <div class="front not-border"></div>
+                                                <div class="back not-border">
+                                                    <svg width="10" height="10" viewBox="0 5 16 14">
+                                                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <span>TI & Tecnologia</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="title not-border">Mini-currículo</div>
+                            <small>(até 700 caracteres)</small>
+                            <br/>
+                            <textarea maxlength="700"></textarea>
+                            <div class="not-border">
+                                <a class="orange-font-color" href="">
+                                    <span class="icon icon-upload"></span> meu contrato</a>
+                            </div>
+
+                            <div class="title not-border">Dados bancários</div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">Banco</div>
+                                <input class="col-lg-6 col-md-6 col-sm-6 col-6" type="text" id="banco" name="banco" value="Banco X">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">Agência</div>
+                                <input type="text" id="agencia" name="agencia" value="0606">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">Conta corrente</div>
+                                <input type="text" id="conta" name="conta" value="156056-2">
+                            </div>
+                            <br/>
+                            <br/>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">*Email</div>
+                                <input required type="email" id="email" name="email" value="teo_medina@gmail.com">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">*Senha</div>
+                                <input required type="password" id="password" name="password" value="123456">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">*Confirme sua senha</div>
+                                <input required type="password" id="password_confirm" name="password_confirm" value="123456">
+                            </div>
+                            <small>A sua senha deverá ter no mínimo 2 caracteres e 2 números</small>
+                            <br/><br/>
+                            <button type="submit" class="orange-background">atualizar</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Page Content -->
+
+
+
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <div data-include="footer"></div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script>
+
+
+
+</script>
+<style>
+    #page-agenda .navbar {
+        background-color: #DBDADA !important;
+    }
+
+    #mobile_navbar {
+        background-color: #DBDADA !important;
+
+    }
+</style>
+
+</html>

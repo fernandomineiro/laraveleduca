@@ -1,0 +1,84 @@
+
+
+
+
+<div id="page-conta" class="meu-curso tcc">
+
+    <!-- Footer -->
+    <div data-include="footer"></div>
+    <div class="modal fade" id="tccModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <div class="logo">
+                            <img src="../img/Educaz_preto.png" width="100%" height="auto" />
+                        </div>
+                        <div class="enviar-title orange-font-color">Enviar TCC</div>
+                        <form id="form_upload">
+                            <input type="file" style="display:none;" name="uploadFile" id="upload" required>
+                            <button class="orange-background" type="button" id="upload-fake" onclick="clickUpload()">selecionar arquivo</button>
+                            <div id="path">arquivo.pdf</div>
+                            <br/>
+                            <br/>
+                            <button class="orange-background" type="submit" id="send_file">enviar</button>
+                            <br/>
+                            <button style="background-color:#B2B1B1;color:white;font-family: encodeSansCondensed-Bold;" id="cancel" data-dismiss="modal">cancelar</button>
+                            <br/>
+                            <br/>
+                        </form>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<script>
+
+    function clickUpload() {
+        console.log("aqui");
+        $("#upload").click();
+    }
+
+    $("#upload").change(function () {
+        var path = $("#upload").val();
+        $("#path").text($("#upload")[0].files.item(0).name);
+    });
+
+    var interval = setInterval(function () {
+        if ($("#topnav_users").length) {
+            $("#topnav_users").addClass("orange-font-color");
+            clearInterval(interval);
+        }
+    }, 100);
+
+    var progressValue = Number($("#progress_chart").attr("progress"));
+    $('#progress_chart').circleProgress({
+        value: progressValue,
+        size: 130,
+        fill: {
+            gradient: ["#D35B30", "#FFF22D"]
+        },
+        reverse: true,
+        thickness: 20,
+        emptyFill: "transparent"
+    });
+
+
+
+</script>
+
+

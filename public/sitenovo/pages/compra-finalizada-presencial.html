@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Educaz - Os melhores cursos certificados</title>
+
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/shop-homepage.css" rel="stylesheet">
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+
+    <script src="../js/includeComponents.js"></script>
+    <script src="../js/elementsHandler.js"></script>
+
+</head>
+
+<body id="page-compra-finalizada">
+    <header>
+        <div data-include="topnav"></div>
+
+
+    </header>
+
+    <section>
+        <div class="row main-row">
+            <div class="col-lg-3 col-md-3 col-sm-0 col-0">
+
+            </div>
+
+            <div class="col-lg-5 col-md-5 col-sm-12 col-12" id="not_print">
+                <h2 class="orange-font-color">Compra realizada com sucesso</h2>
+                <h3>Número da compra
+                    <span id="compra_num">19780865</span>
+                </h3>
+                <br/>
+                <div class="regular-text">
+                    Os vouchers dos cursos presenciais e eventos estarão disponíveis na seção
+                    <a href="" class="orange-font-color">Meu perfil</a>
+                    e poderão ser acessados pelo celular, tablete ou computador.
+                </div>
+                <br/>
+                <div class="regular-text">Prazos:</div>
+                <div class="regular-text">Para pagamento em cartão de crédito: imediato</div>
+                <div class="regular-text">Para pagamento com boleto bancário: 48h após a confirmação do pagamento</div>
+                <br/>
+                <br/>
+                <div class="warning">É obrigatória a apresentação do voucher na entrada de eventos e de cursos presenciais.</div>
+                <br/>
+                <br/>
+
+                <div id="buttons">
+                    <div onclick="">
+                        <span class="icon icon-envelope"></span>
+                        <span>enviar por email</span>
+                    </div>
+                    <div onclick="window.print();">
+                        <span class="icon icon-printer"></span>
+                        <span>imprimir</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-0 col-0">
+
+            </div>
+
+            <div class="container hide-sm">
+                <div class="row" id="voucher">
+                    <div class="col-lg-12 col-md-12 col-sm-0 col-0 voucher-outter">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3" style="border-right:1px solid #707070;display:flex;flex-direction:column;justify-content:center;">
+                                <div id="logo_1">
+                                    <img src="../img/educaz_logo.png" width="100%" height="auto" />
+                                </div>
+                                <div id="order-info">
+                                    <div>pedido
+                                        <span id="order_number_voucher">19780865</span>
+                                    </div>
+                                    <div id="client_voucher">Marina da Silva</div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div id="course_name_voucher">Concurso Público – Licitações e Contratos Administrativos</div>
+                                <div id="teacher_name_voucher">Jorge Fernando</div>
+                                <div id="address_date_voucher">
+                                    <div id="date">15 de janeiro de 2019, das 13h às 16h</div>
+                                    <div id="place">Centro de Convenções Rebouças</div>
+                                    <div id="address">Av. Rebouças, 689, São Paulo - SP </div>
+                                </div>
+                                <div class="price">
+                                    R$
+                                    <span id="prive_value_voucher">46,00</span>
+                                </div>
+                                <small>Seu certificado estará disponível na sua área de perfil em até 1 semana após a conclusão
+                                    do curso caso seja verificada sua presença ou outras exigências do palestrante/professor.
+                                </small>
+                            </div>
+                            <div class="col-lg-3 col-md-3">
+                                <div id="qr_code">
+                                    <img src="" width="100px" height="100px" />
+                                </div>
+                                <div id="logo">
+                                    <img src="../img/Educaz_preto.png" width="100%" height="auto"/>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br/>
+        <br/>
+
+
+    </section>
+
+
+    <!-- Page Content -->
+
+
+    <section id="section_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <div data-include="footer"></div>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+<script>
+
+
+
+    var interval = setInterval(function () {
+        if ($("#topnav_shop").length) {
+            $("#topnav_shop").addClass("orange-font-color");
+            clearInterval(interval);
+        }
+    }, 100);
+
+
+    
+
+</script>
+
+<style>
+    #page-compra-finalizada .navbar {
+        background-color: #DBDADA !important;
+    }
+
+    #mobile_navbar {
+        background-color: #DBDADA !important;
+
+    }
+
+    @media print {
+        .navbar,
+        #mobile_navbar,
+        footer,
+        #not_print
+        {
+            display: none;
+        }
+    }
+</style>
+
+</html>

@@ -1,0 +1,6 @@
+@media only screen and (min-width: 768px){
+    .page-valida-voucher form,
+    .page-valida-voucher h1 {
+        margin-top: 100px;
+    }
+}

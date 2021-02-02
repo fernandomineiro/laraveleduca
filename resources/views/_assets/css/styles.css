@@ -1,0 +1,20 @@
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.table {
+    z-index: 1000;
+}
+table.dataTable thead th, table.dataTable thead td {
+    border-bottom: 2px solid #ddd;
+}

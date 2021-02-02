@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'VolvoSans';
+  src: url("../fonts/VolvoSans.eot");
+  src: url("../fonts/VolvoSans.eot") format("embedded-opentype"), url("../fonts/VolvoSans.woff2") format("woff2"), url("../fonts/VolvoSans.woff") format("woff"), url("../fonts/VolvoSans.ttf") format("truetype"), url("../fonts/VolvoSans.svg#VolvoSans") format("svg"); }
+@font-face {
+  font-family: 'VolvoSansLight';
+  src: url("../fonts/VolvoSansLight.eot");
+  src: url("../fonts/VolvoSansLight.eot") format("embedded-opentype"), url("../fonts/VolvoSansLight.woff2") format("woff2"), url("../fonts/VolvoSansLight.woff") format("woff"), url("../fonts/VolvoSansLight.ttf") format("truetype"), url("../fonts/VolvoSansLight.svg#VolvoSansLight") format("svg"); }
+@font-face {
+  font-family: 'VolvoSans_Bold';
+  src: url("../fonts/VolvoSans_Bold.eot");
+  src: url("../fonts/VolvoSans_Bold.eot") format("embedded-opentype"), url("../fonts/VolvoSans_Bold.woff2") format("woff2"), url("../fonts/VolvoSans_Bold.woff") format("woff"), url("../fonts/VolvoSans_Bold.ttf") format("truetype"), url("../fonts/VolvoSans_Bold.svg#VolvoSans_Bold") format("svg"); }
+@font-face {
+  font-family: 'VolvoSerif_Italic';
+  src: url("../fonts/VolvoSerif_Italic.eot");
+  src: url("../fonts/VolvoSerif_Italic.eot") format("embedded-opentype"), url("../fonts/VolvoSerif_Italic.woff2") format("woff2"), url("../fonts/VolvoSerif_Italic.woff") format("woff"), url("../fonts/VolvoSerif_Italic.ttf") format("truetype"), url("../fonts/VolvoSerif_Italic.svg#VolvoSerif_Italic") format("svg"); }
+@font-face {
+  font-family: 'VolvoSerif_BoldItalic';
+  src: url("../fonts/VolvoSerif_BoldItalic.eot");
+  src: url("../fonts/VolvoSerif_BoldItalic.eot") format("embedded-opentype"), url("../fonts/VolvoSerif_BoldItalic.woff2") format("woff2"), url("../fonts/VolvoSerif_BoldItalic.woff") format("woff"), url("../fonts/VolvoSerif_BoldItalic.ttf") format("truetype"), url("../fonts/VolvoSerif_BoldItalic.svg#VolvoSerif_BoldItalic") format("svg"); }
+
+
+/*# sourceMappingURL=main.css.map */

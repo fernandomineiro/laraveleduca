@@ -1,0 +1,44 @@
+@font-face {
+    font-family: encodeSansCondensed-Black;
+    src: url(EncodeSansCondensed-Black.ttf);
+  }
+
+  @font-face {
+    font-family: encodeSansCondensed-Bold;
+    src: url(EncodeSansCondensed-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: encodeSansCondensed-ExtraBold;
+    src: url(EncodeSansCondensed-ExtraBold.ttf);
+  }
+
+  @font-face {
+    font-family: encodeSansCondensed-ExtraLight;
+    src: url(EncodeSansCondensed-ExtraLight.ttf);
+  }
+
+  @font-face {
+    font-family: encodeSansCondensed-Light;
+    src: url(EncodeSansCondensed-Light.ttf);
+  }
+
+  @font-face {
+    font-family: encodeSansCondensed-Medium;
+    src: url(EncodeSansCondensed-Medium.ttf);
+  }
+
+  @font-face {
+    font-family: encodeSansCondensed-Regular;
+    src: url(EncodeSansCondensed-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: encodeSansCondensed-SemiBold;
+    src: url(EncodeSansCondensed-SemiBold.ttf);
+  }
+
+  @font-face {
+    font-family: encodeSansCondensed-Thin;
+    src: url(EncodeSansCondensed-Thin.ttf);
+  }

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Educaz - Os melhores cursos certificados</title>
+
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/shop-homepage.css" rel="stylesheet">
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+
+    <script src="../js/includeComponents.js"></script>
+    <script src="../js/elementsHandler.js"></script>
+
+</head>
+
+<body id="page-cursos" class="page-teacher">
+    <header>
+        <div data-include="topnav"></div>
+
+    </header>
+    <div class="banner-header">
+        <img src="../img/professores_header_background.png" />
+        <div class="container header">
+            <div id="cursos_header">
+                <h2>Nossos professores</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+
+
+    <section id="section_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3" id="sidebar" data-include="sidebar"></div>
+                <div class="col-lg-9">
+                    <div class="row sort-order">
+                        <div class="col-lg-2 col-md-2 col-sm-12 col-12" id="sort">
+                            <div class="dropdown">
+                                <button href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ordenar
+                                    <span class="caret"></span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <form id="form_curso_sort_order_dropdown">
+                                        <div class="radio">
+                                            <input id="sort_az" name="sort-az" type="radio" checked>
+                                            <label for="sort_az" class="radio-label">A-Z</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input id="sort_za" name="sort-az" type="radio">
+                                            <label for="sort_za" class="radio-label">Z-A</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input id="sort_mais_vendidos" name="sort-other" type="radio" checked>
+                                            <label for="sort_mais_vendidos" class="radio-label">mais vendidos</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input id="sort_mais_recente" name="sort-other" type="radio">
+                                            <label for="sort_mais_recente" class="radio-label">mais recentes</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input id="sort_promocoes" name="sort-other" type="radio">
+                                            <label for="sort_promocoes" class="radio-label">promoções</label>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-12 search-div">
+                            <form id="form_curso_sort_order_search">
+                                <input placeholder="pesquisar" />
+                                <span class="icon-search"></span>
+                            </form>
+                        </div>
+                        <div class="col-lg-1 col-md-6 col-sm-6 col-6 view-options hide-mobile">
+                            <button onclick="activate('list')" style="background-color:transparent;color: #DBDADA;font-size:25px;margin-top: -5px;">
+                                <span class="icon-hamburger-menu-1"></span>
+                            </button>
+                        </div>
+                        <div class="col-lg-1 col-md-6 col-sm-6 col-6 hide-mobile">
+                            <button onclick="activate('grid')" style="background-color:transparent;color: #DBDADA;font-size:25px;margin-top: -5px;">
+                                <span id="button_grid" class="icon-plus-filled active"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="professores-container" class="row grid">
+                        <hr/>
+                        <a href="" class="professor-outter">
+                            <div class="orange-light-background orange-box">
+                                <img src="../img/teacher_image.png" />
+                            </div>
+                            <div class="professor-info">
+                                <div class="professor-nome">
+                                    Teo Medina
+                                </div>
+                                <div class="courses">
+                                    <span class="courses-amount">14</span> cursos publicados</div>
+                            </div>
+                        </a>
+                        <hr/>
+                        <a href="" class="professor-outter">
+                            <div class="orange-light-background orange-box">
+                                <img src="../img/teacher_image.png" />
+                            </div>
+                            <div class="professor-info">
+                                <div class="professor-nome">
+                                    Teo Medina
+                                </div>
+                                <div class="courses">
+                                    <span class="courses-amount">14</span> cursos publicados</div>
+                            </div>
+                        </a>
+                        <hr/>
+                        <a href="" class="professor-outter">
+                            <div class="orange-light-background orange-box">
+                                <img src="../img/teacher_image.png" />
+                            </div>
+                            <div class="professor-info">
+                                <div class="professor-nome">
+                                    Teo Medina
+                                </div>
+                                <div class="courses">
+                                    <span class="courses-amount">14</span> cursos publicados</div>
+                            </div>
+                        </a>
+                        <hr/>
+                        <a href="" class="professor-outter">
+                            <div class="orange-light-background orange-box">
+                                <img src="../img/teacher_image.png" />
+                            </div>
+                            <div class="professor-info">
+                                <div class="professor-nome">
+                                    Teo Medina
+                                </div>
+                                <div class="courses">
+                                    <span class="courses-amount">14</span> cursos publicados</div>
+                            </div>
+                        </a>
+                        <hr/>
+                        <a href="" class="professor-outter">
+                            <div class="orange-light-background orange-box">
+                                <img src="../img/teacher_image.png" />
+                            </div>
+                            <div class="professor-info">
+                                <div class="professor-nome">
+                                    Teo Medina
+                                </div>
+                                <div class="courses">
+                                    <span class="courses-amount">14</span> cursos publicados</div>
+                            </div>
+                        </a>
+                        <hr/>
+                        <a href="" class="professor-outter">
+                            <div class="orange-light-background orange-box">
+                                <img src="../img/teacher_image.png" />
+                            </div>
+                            <div class="professor-info">
+                                <div class="professor-nome">
+                                    Teo Medina
+                                </div>
+                                <div class="courses">
+                                    <span class="courses-amount">14</span> cursos publicados</div>
+                            </div>
+                        </a>
+                        <hr/>
+                        <a href="" class="professor-outter">
+                            <div class="orange-light-background orange-box">
+                                <img src="../img/teacher_image.png" />
+                            </div>
+                            <div class="professor-info">
+                                <div class="professor-nome">
+                                    Teo Medina
+                                </div>
+                                <div class="courses">
+                                    <span class="courses-amount">14</span> cursos publicados</div>
+                            </div>
+                        </a>
+                        <hr/>
+                        <a href="" class="professor-outter">
+                            <div class="orange-light-background orange-box">
+                                <img src="../img/teacher_image.png" />
+                            </div>
+                            <div class="professor-info">
+                                <div class="professor-nome">
+                                    Teo Medina
+                                </div>
+                                <div class="courses">
+                                    <span class="courses-amount">14</span> cursos publicados</div>
+                            </div>
+                        </a>
+                        <hr/>
+                        <a href="" class="professor-outter">
+                            <div class="orange-light-background orange-box">
+                                <img src="../img/teacher_image.png" />
+                            </div>
+                            <div class="professor-info">
+                                <div class="professor-nome">
+                                    Teo Medina
+                                </div>
+                                <div class="courses">
+                                    <span class="courses-amount">14</span> cursos publicados</div>
+                            </div>
+                        </a>
+                        <hr/>
+                        <a href="" class="professor-outter">
+                            <div class="orange-light-background orange-box">
+                                <img src="../img/teacher_image.png" />
+                            </div>
+                            <div class="professor-info">
+                                <div class="professor-nome">
+                                    Teo Medina
+                                </div>
+                                <div class="courses">
+                                    <span class="courses-amount">14</span> cursos publicados</div>
+                            </div>
+                        </a>
+                        <hr/>
+                        <a href="" class="professor-outter">
+                            <div class="orange-light-background orange-box">
+                                <img src="../img/teacher_image.png" />
+                            </div>
+                            <div class="professor-info">
+                                <div class="professor-nome">
+                                    Teo Medina
+                                </div>
+                                <div class="courses">
+                                    <span class="courses-amount">14</span> cursos publicados</div>
+                            </div>
+                        </a>
+                        <hr/>
+                        <a href="" class="professor-outter">
+                            <div class="orange-light-background orange-box">
+                                <img src="../img/teacher_image.png" />
+                            </div>
+                            <div class="professor-info">
+                                <div class="professor-nome">
+                                    Teo Medina
+                                </div>
+                                <div class="courses">
+                                    <span class="courses-amount">14</span> cursos publicados</div>
+                            </div>
+                        </a>
+                        <hr/>
+                    </div>
+
+                    <div class="row" style="padding:25px;">
+                        <div id="see-all">
+                            <a href="">
+                                <span class="icon icon-graduation-hat orange-font-color"></span>
+                                <span style="font-family:encodeSansCondensed-Medium;margin:auto">Quero ver todos os professores</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <div data-include="footer"></div>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+<script>
+
+
+    function activate(el) {
+        console.log(el);
+        if (el == 'grid') {
+            $(".list").addClass('grid');
+            $(".list").removeClass('list');
+            $("#button_grid").addClass('active');
+            $(".view-options .icon-hamburger-menu-1").removeClass('active');
+        } else {
+            $(".grid").addClass('list');
+            $(".grid").removeClass('grid');
+            $("#button_grid").removeClass('active');
+            $(".view-options .icon-hamburger-menu-1").addClass('active');
+        }
+    }
+
+    var interval = setInterval(function () {
+        if ($("#topnav_professores").length) {
+            $("#topnav_professores").addClass("orange-font-color");
+            clearInterval(interval);
+        }
+    }, 100);
+
+    $(window).resize(function () {
+        isMobile();
+    });
+    isMobile();
+    function isMobile() {
+        if ($(window).width() <= 991) {
+            activate('list');
+            $(".view-options").hide();
+        } else {
+            $(".view-options").show();
+        }
+    }
+
+</script>
+<style>
+    #mobile_navbar {
+        background-color: rgba(255, 255, 255, .7) !important;
+
+    }
+</style>
+
+</html>

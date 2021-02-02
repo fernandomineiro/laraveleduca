@@ -1,0 +1,1 @@
+!function(p){p.extend(p.inputmask.defaults.aliases,{phone:{url:"phone-codes/phone-codes.json",mask:function(n){n.definitions={p:{validator:function(){return!1},cardinality:1},"#":{validator:"[0-9]",cardinality:1}};var a=[];return p.ajax({url:n.url,async:!1,dataType:"json",success:function(n){a=n}}),a.splice(0,0,"+p(ppp)ppp-pppp"),a}}})}(jQuery);

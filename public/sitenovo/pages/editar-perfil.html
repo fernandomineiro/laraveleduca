@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Educaz - Os melhores cursos certificados</title>
+
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/shop-homepage.css" rel="stylesheet">
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+
+    <script src="../js/includeComponents.js"></script>
+    <script src="../js/elementsHandler.js"></script>
+
+</head>
+
+<body id="page-cadastro" class="editar-perfil">
+    <header>
+        <div data-include="topnav"></div>
+
+
+    </header>
+
+    <section>
+
+        <div class="container">
+            <div class="row main-row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12 avatar-info">
+                    <div class="picture-container">
+                        <img id="user_avatar" src="../img/teacher_image.png" width="100%" height="100%" />
+                    </div>
+                    <div id="editar_foto" class="text-center">
+                        <a class="orange-font-color" href="#">editar foto</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 main-form">
+                    <h2 class="orange-font-color">Editar perfil</h2>
+                    <form id="cadastro_form" style="padding: 0 20px;">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <span class="label">* Nome</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <input id="sobrenome" type="text" required placeholder="Nome" value="Mário" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <span class="label">* Sobrenome</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <input id="sobrenome" type="text" required placeholder="Sobrenome" value="Oliveira" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <span class="label">* CPF</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <input id="cpf" type="text" required placeholder="CPF" value="33333333333" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <span class="label">* Data de nascimento</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <input id="birthday" type="date" required placeholder="" value="1989-01-01" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <span class="label">* CEP</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <input id="cep" type="text" required placeholder="CEP" value="00000000" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <span class="label">* Rua</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <input id="address_street" type="text" required placeholder="Rua" value="Rua das Amoreiras" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <span class="label">* Número</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <input id="address_number" type="text" required placeholder="Número" value="1" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <span class="label">* Complemento</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <input id="address_complemento" type="text" required placeholder="Complemento" value="apt 100" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <span class="label">* Cidade</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <input id="address_city" type="text" required placeholder="Cidade" value="São Paulo" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <span class="label">* Estado</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                <input id="address_state" type="text" required placeholder="Estado" value="SP" />
+                            </div>
+                        </div>
+                        <div class="not-border">
+                            <small>* preenchimento obrigatório</small>
+                        </div>
+                        <div id="aditional_info" class="not-border">
+                            <div id="graduation_info">
+                                <span style="opacity:.6">Fazendo curso superior? </span>
+                                <span class="radio">
+                                    <input id="graduation_yes" checked name="graduation" type="radio">
+                                    <label for="graduation_yes" class="radio-label">sim</label>
+                                </span>
+                                <span class="radio">
+                                    <input id="graduation_no" name="graduation" type="radio">
+                                    <label for="graduation_no" class="radio-label">não</label>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <span class="label">* Universidade</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <input id="university" type="text" placeholder="Universidade" value="Anhembi Morumbi" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <span class="label">* Faculdade</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <input id="college" type="text" placeholder="Faculdade" value="Faculdade Ciências Exatas" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <span class="label">* Curso</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <input id="course" type="text" placeholder="Curso" value="Economia" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <span class="label">* Semestre</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <input id="semester" type="text" placeholder="Semestre" value="5º semestre" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <span class="label">* RA</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <input id="ra" type="text" placeholder="RA" value="285.852" />
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div id="contact_info" class="not-border">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <span class="label">* email</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <input id="email" type="email" placeholder="email" required value="email@email.com" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <span class="label">* Senha</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <input id="password" type="password" placeholder="senha" required value="12345" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <span class="label">* Confirme sua senha</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 not-border">
+                                    <input id="password_confirm" type="password" placeholder="senha" required value="12345" />
+                                </div>
+                            </div>
+
+                            <div class="not-border">
+                                <small>A sua senha deverá ter no mínimo 2 caracteres e 2 números</small>
+                            </div>
+                        </div>
+
+                        
+                        <button type="submit" class="orange-background">atualizar</button>
+
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 hide-mobile">
+
+                </div>
+
+            </div>
+        </div>
+
+
+        </div>
+
+
+
+
+    </section>
+
+
+    <!-- Page Content -->
+
+
+    <section id="section_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <div data-include="footer"></div>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+<script>
+
+
+
+    var interval = setInterval(function () {
+        if ($("#topnav_users").length) {
+            $("#topnav_users").addClass("orange-font-color");
+            clearInterval(interval);
+        }
+    }, 100);
+
+
+
+</script>
+
+<style>
+    #page-cadastro .navbar {
+        background-color: #DBDADA !important;
+    }
+
+    #mobile_navbar {
+        background-color: #DBDADA !important;
+
+    }
+</style>
+
+</html>

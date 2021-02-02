@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Educaz - Os melhores cursos certificados</title>
+
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/shop-homepage.css" rel="stylesheet">
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+
+    <script src="../js/includeComponents.js"></script>
+    <script src="../js/elementsHandler.js"></script>
+    <script src="../js/circle-progress.js"></script>
+    <script src="https://underscorejs.org/underscore.js"></script>
+
+</head>
+
+<body id="page-agenda" style="position:relative;" class="page-meus-cursos page-criar-curso page-relatorios">
+    <div id="tooltip_calendar" class="box-shadow" style="font-family: encodeSansCondensed-Regular;">
+
+    </div>
+    <header>
+        <div data-include="topnav"></div>
+
+
+
+    </header>
+    <section id="main_content">
+        <div class="row" style="width:100%;">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 left-menu">
+                <div class="orange-background menu-container">
+                    <ul class="ul-container">
+                        <li>
+                            <a href="" class="level1">Meu perfil</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Criar curso</a>
+                            <ul>
+                                <li>
+                                    <a href="" class="level2">Online</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Presencial</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Híbrido</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Evento</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Meus cursos</a>
+                            <ul>
+                                <li>
+                                    <a href="" class="level2">Online</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Presenciais</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Híbridos</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Agenda de cursos</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Eventos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Status de aprovação</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Agenda de gravação</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1 current">Relatórios e gráficos</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Lista de presença</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Tutoria</a>
+                            <ul>
+                                <li>
+                                    <a href="" class="level2">Mensagens:
+                                        <span id="messages">3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Trabalhos</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li style="margin-top:20px;">
+                            <a href="" class="level1">X &nbsp; Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-12" style="max-width:810px;margin-top:80px;" id="page-cadastro">
+                <div class="title orange-font-color">Relatórios e gráficos
+                </div>
+                <form id="form_info">
+                    <div class="row main-row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 item">
+                            <span>Mês </span>
+                            <select id="mes" name="mes" class="col-lg-9 col-md-8 col-sm-6 col-6">
+                                <option selected disabled value="">Selecionar mês</option>
+                                <option value="1">Janeiro</option>
+                                <option value="2">Fevereiro</option>
+                                <option value="3">Março</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Maio</option>
+                                <option value="6">Junho</option>
+                                <option value="7">Julho</option>
+                                <option value="8">Agosto</option>
+                                <option value="9">Setembro</option>
+                                <option value="10">Outubro</option>
+                                <option value="11">Novembro</option>
+                                <option value="12">Dezembro</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 item">
+                            <span>IES </span>
+                            <select id="ies" name="ies" class="col-lg-9 col-md-8 col-sm-6 col-6">
+                                <option selected disabled value="">Selecionar IES</option>
+                                <option value="1">Opção 1</option>
+                                <option value="2">Opção 2</option>
+                                <option value="3">Opção 3</option>
+                                <option value="4">Opção 4</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                            <button type="submit" id="visualizar" class="orange-background">visualizar em lista</button>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                            <button id="exportar" class="orange-background">exportar</button>
+                        </div>
+                    </div>
+                </form>
+                <hr/>
+                <br/>
+                <div class="row charts fatura">
+                    <div class="chart-type col-lg-12 col-md-12 col-sm-12 col-12 orange-font-color">Acessos</div>
+                    <div class="chart-description col-lg-12 col-md-12 col-sm-12 col-12">Total do mês:
+                        <span>2.700</span> acessos
+                    </div>
+
+                    <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
+                        <hr class="col-lg-12 col-md-12 col-sm-12 col-12" />
+                        <div class="col-lg-8 col-md-8 col-sm-4 col-4">
+                            <div class="course-name">Concurso Público - Licitações e Contratos Administrativos</div>
+                            <div>Publicado em
+                                <span class="date">25 de janeiro de 2019, 14:40</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 value">
+                            65
+                        </div>
+                    </div>
+                    <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
+                        <hr class="col-lg-12 col-md-12 col-sm-12 col-12" />
+                        <div class="col-lg-8 col-md-8 col-sm-4 col-4">
+                            <div class="course-name">Concurso Público - Licitações e Contratos Administrativos</div>
+                            <div>Publicado em
+                                <span class="date">25 de janeiro de 2019, 14:40</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 value">
+                            65
+                        </div>
+                    </div>
+                    <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
+                        <hr class="col-lg-12 col-md-12 col-sm-12 col-12" />
+                        <div class="col-lg-8 col-md-8 col-sm-4 col-4">
+                            <div class="course-name">Concurso Público - Licitações e Contratos Administrativos</div>
+                            <div>Publicado em
+                                <span class="date">25 de janeiro de 2019, 14:40</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 value">
+                            65
+                        </div>
+                    </div>
+
+
+                </div>
+                <hr/>
+                <br/>
+                <div class="row charts fatura">
+                    <div class="chart-type col-lg-12 col-md-12 col-sm-12 col-12 orange-font-color">Vendas</div>
+                    <div class="chart-description col-lg-12 col-md-12 col-sm-12 col-12">Total do mês:
+                        <span>R$ 380,00</span>
+                    </div>
+
+                    <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
+                        <hr class="col-lg-12 col-md-12 col-sm-12 col-12" />
+                        <div class="col-lg-8 col-md-8 col-sm-4 col-4">
+                            <div class="course-name">Concurso Público - Licitações e Contratos Administrativos</div>
+                            <div>Publicado em
+                                <span class="date">25 de janeiro de 2019, 14:40</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 value">
+                            R$ 85,00
+                        </div>
+                    </div>
+                    <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
+                        <hr class="col-lg-12 col-md-12 col-sm-12 col-12" />
+                        <div class="col-lg-8 col-md-8 col-sm-4 col-4">
+                            <div class="course-name">Concurso Público - Licitações e Contratos Administrativos</div>
+                            <div>Publicado em
+                                <span class="date">25 de janeiro de 2019, 14:40</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 value">
+                            R$ 85,00
+                        </div>
+                    </div>
+                    <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
+                        <hr class="col-lg-12 col-md-12 col-sm-12 col-12" />
+                        <div class="col-lg-8 col-md-8 col-sm-4 col-4">
+                            <div class="course-name">Concurso Público - Licitações e Contratos Administrativos</div>
+                            <div>Publicado em
+                                <span class="date">25 de janeiro de 2019, 14:40</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 value">
+                            R$ 85,00
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <hr/>
+                <br/>
+                <div class="row charts fatura">
+                    <div class="chart-type col-lg-12 col-md-12 col-sm-12 col-12 orange-font-color">Cursos concluídos</div>
+                    <div class="chart-description col-lg-12 col-md-12 col-sm-12 col-12">Total do mês:
+                        <span>70</span> alunos concluíram os cursos
+                    </div>
+
+                    <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
+                        <hr class="col-lg-12 col-md-12 col-sm-12 col-12" />
+                        <div class="col-lg-8 col-md-8 col-sm-4 col-4">
+                            <div class="course-name">Concurso Público - Licitações e Contratos Administrativos</div>
+                            <div>Publicado em
+                                <span class="date">25 de janeiro de 2019, 14:40</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 value">
+                            65
+                        </div>
+                    </div>
+                    <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
+                        <hr class="col-lg-12 col-md-12 col-sm-12 col-12" />
+                        <div class="col-lg-8 col-md-8 col-sm-4 col-4">
+                            <div class="course-name">Concurso Público - Licitações e Contratos Administrativos</div>
+                            <div>Publicado em
+                                <span class="date">25 de janeiro de 2019, 14:40</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 value">
+                            65
+                        </div>
+                    </div>
+                    <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
+                        <hr class="col-lg-12 col-md-12 col-sm-12 col-12" />
+                        <div class="col-lg-8 col-md-8 col-sm-4 col-4">
+                            <div class="course-name">Concurso Público - Licitações e Contratos Administrativos</div>
+                            <div>Publicado em
+                                <span class="date">25 de janeiro de 2019, 14:40</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 value">
+                            65
+                        </div>
+                    </div>
+
+
+                </div>
+                <hr/>
+                <div class="see-more">
+
+                    <a href="" class="orange-font-color">
+                        <b>mais relatórios/gráficos</b>
+                    </a>
+                </div>
+
+                <br/>
+                <br/>
+                <br/>
+                <div class="row charts fatura">
+                    <div class="chart-type col-lg-12 col-md-12 col-sm-12 col-12 orange-font-color">Fatura</div>
+                    <div class="chart-description col-lg-12 col-md-12 col-sm-12 col-12">Total a receber:
+                        <span>R$ 850,00</span>
+                    </div>
+
+                    <div class="row">
+                        <hr/>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <div class="course-name">Concurso Público - Licitações e Contratos Administrativos</div>
+                            <div>Publicado em
+                                <span class="date">25 de janeiro de 2019, 14:40</span>
+                            </div>
+                            <div class="orange-font-color amount">
+                                <span class="amount-courses">150</span> cursos vendidos
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="line">
+                                <div class="left">venda</div>
+                                <div class="right value">R$ 850,00</div>
+                            </div>
+                            <div class="line">
+                                <div class="left">taxas e impostos</div>
+                                <div class="right value">R$ 175,00</div>
+                            </div>
+                            <hr/>
+                            <div class="line">
+                                <div class="left">
+                                    <b>total a receber</b>
+                                </div>
+                                <div class="right value">
+                                    <b>R$ 672,00</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr/>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <div class="course-name">Concurso Público - Licitações e Contratos Administrativos</div>
+                            <div>Publicado em
+                                <span class="date">25 de janeiro de 2019, 14:40</span>
+                            </div>
+                            <div class="orange-font-color amount">
+                                <span class="amount-courses">150</span> cursos vendidos
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="line">
+                                <div class="left">venda</div>
+                                <div class="right value">R$ 850,00</div>
+                            </div>
+                            <div class="line">
+                                <div class="left">taxas e impostos</div>
+                                <div class="right value">R$ 175,00</div>
+                            </div>
+                            <hr/>
+                            <div class="line">
+                                <div class="left">
+                                    <b>total a receber</b>
+                                </div>
+                                <div class="right value">
+                                    <b>R$ 672,00</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr/>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <div class="course-name">Concurso Público - Licitações e Contratos Administrativos</div>
+                            <div>Publicado em
+                                <span class="date">25 de janeiro de 2019, 14:40</span>
+                            </div>
+                            <div class="orange-font-color amount">
+                                <span class="amount-courses">150</span> cursos vendidos
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="line">
+                                <div class="left">venda</div>
+                                <div class="right value">R$ 850,00</div>
+                            </div>
+                            <div class="line">
+                                <div class="left">taxas e impostos</div>
+                                <div class="right value">R$ 175,00</div>
+                            </div>
+                            <hr/>
+                            <div class="line">
+                                <div class="left">
+                                    <b>total a receber</b>
+                                </div>
+                                <div class="right value">
+                                    <b>R$ 672,00</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr/>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <div class="course-name">Concurso Público - Licitações e Contratos Administrativos</div>
+                            <div>Publicado em
+                                <span class="date">25 de janeiro de 2019, 14:40</span>
+                            </div>
+                            <div class="orange-font-color amount">
+                                <span class="amount-courses">150</span> cursos vendidos
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="line">
+                                <div class="left">venda</div>
+                                <div class="right value">R$ 850,00</div>
+                            </div>
+                            <div class="line">
+                                <div class="left">taxas e impostos</div>
+                                <div class="right value">R$ 175,00</div>
+                            </div>
+                            <hr/>
+                            <div class="line">
+                                <div class="left">
+                                    <b>total a receber</b>
+                                </div>
+                                <div class="right value">
+                                    <b>R$ 672,00</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Page Content -->
+
+
+
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <div data-include="footer"></div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script>
+
+
+
+
+
+</script>
+<style>
+    #page-agenda .navbar {
+        background-color: #DBDADA !important;
+    }
+
+    #mobile_navbar {
+        background-color: #DBDADA !important;
+
+    }
+
+    .highcharts-yaxis path {
+        stroke: #ccd6eb;
+    }
+</style>
+
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Educaz - Os melhores cursos certificados</title>
+
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/shop-homepage.css" rel="stylesheet">
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+
+    <script src="../js/includeComponents.js"></script>
+    <script src="../js/elementsHandler.js"></script>
+    <script src="../js/circle-progress.js"></script>
+    <script src="https://underscorejs.org/underscore.js"></script>
+
+</head>
+
+<body id="page-agenda" style="position:relative;" class="page-criar-curso page-meus-cursos page-agenda-gravacao">
+    <div id="tooltip_calendar" class="box-shadow">
+        <div class="square">
+
+        </div>
+        <div id="title"></div>
+        <div id="date"></div>
+        <div id="local"></div>
+    </div>
+    <header>
+        <div data-include="topnav"></div>
+
+
+
+    </header>
+    <section id="main_content">
+        <div class="row" style="width:100%;">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 left-menu">
+                <div class="orange-background menu-container">
+                    <ul class="ul-container">
+                        <li>
+                            <a href="" class="level1">Meu perfil</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Criar curso</a>
+                            <ul>
+                                <li>
+                                    <a href="" class="level2">Online</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Presencial</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Híbrido</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Evento</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Meus cursos</a>
+                            <ul>
+                                <li>
+                                    <a href="" class="level2">Online</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Presenciais</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Híbridos</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Agenda de cursos</a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Eventos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Status de aprovação</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1 current">Agenda de gravação</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Relatórios e gráficos</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Lista de presença</a>
+                        </li>
+                        <li>
+                            <a href="" class="level1">Tutoria</a>
+                            <ul>
+                                <li>
+                                    <a href="" class="level2">Mensagens:
+                                        <span id="messages">3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="level2">Trabalhos</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li style="margin-top:20px;">
+                            <a href="" class="level1">X &nbsp; Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-12" style="max-width:810px;margin-top: 80px;">
+                <div class="title orange-font-color">Agenda de gravação
+                </div>
+                <hr/>
+
+                <div class="new orange-font-color">Nova gravação</div>
+
+                <form id="form_nova_gravacao">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 label-form">
+                            Curso
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-6 col-6">
+                            <input type="text" id="curso" name="curso" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 label-form">
+                            Professor
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-6 col-6">
+                            <input type="text" id="professor" name="professor" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 label-form">
+                            Local
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-6 col-6">
+                            <input type="text" id="local" name="local" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 label-form">
+                            Data
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-6 col-6">
+                            <input type="date" id="data" name="data" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 label-form">
+                            Horário de início
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-6 col-6">
+                            <input type="time" id="horario_inicio" name="horario_inicio" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 label-form">
+                            Horário de término
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-6 col-6">
+                            <input type="time" id="horario_termino" name="horario_termino" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 label-form">
+                            Módulos totais
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-6 col-6">
+                            <input type="number" id="modulos_totais" name="modulos_totais" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 label-form">
+                            Módulo gravado
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-6 col-6">
+                            <input type="number" id="modulo_gravado" name="modulo_gravado" />
+                        </div>
+                    </div>
+                   
+                    <div id="page-cadastro">
+                        <div class="main-row row">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-6 col-6">
+                                <button type="submit" class="orange-background">adicionar</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+                <hr/>
+                <div class="calendar-container">
+                    <h3 class="calendar-header" id="monthAndYear0"></h3>
+                    <table class="table table-bordered table-responsive-sm" id="calendar0">
+                        <thead>
+                            <tr>
+                                <th>D</th>
+                                <th>S</th>
+                                <th>T</th>
+                                <th>Q</th>
+                                <th>Q</th>
+                                <th>S</th>
+                                <th>S</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="calendar-body0" compromissos='[{"day":"7","title":"Concurso Público – Licitações e Contratos Administrativos","date":"15 de janeiro de 2019, das 16h às 20h","local":"Centro de Convenções Rebouças Av. Rebouças, 689 São Paulo - SP"},{"day":"14","title":"Concurso Público – Licitações e Contratos Administrativos2 2","date":"15 de janeiro de 2019, das 16h às 20h 2","local":"Centro de Convenções Rebouças Av. Rebouças, 689 São Paulo - SP 2"}]'>
+
+                        </tbody>
+                    </table>
+
+
+
+                </div>
+
+                <div class="calendar-container">
+                    <h3 class="calendar-header" id="monthAndYear1"></h3>
+                    <table class="table table-bordered table-responsive-sm" id="calendar1">
+                        <thead>
+                            <tr>
+                                <th>D</th>
+                                <th>S</th>
+                                <th>T</th>
+                                <th>Q</th>
+                                <th>Q</th>
+                                <th>S</th>
+                                <th>S</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="calendar-body1" compromissos="[]">
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Page Content -->
+
+
+
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <div data-include="footer"></div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+<script src="../vendor/calendar-master/scripts.js"></script>
+<script>
+
+    var interval = setInterval(function () {
+
+        for (var i = 0; i < 2; i++) {
+            if ($("#calendar-body" + i + " .compromisso").length) {
+                clearInterval(interval);
+                var compromissos = JSON.parse($("#calendar-body" + i).attr('compromissos'));
+                $("#calendar-body" + i + " .compromisso").mouseenter(function () {
+                    var obj = _.findWhere(compromissos, { day: $(this).children("div").text() });
+                    $("#tooltip_calendar #title").text(obj.title);
+                    $("#tooltip_calendar #date").text(obj.date);
+                    $("#tooltip_calendar #local").text(obj.local);
+                    $("#tooltip_calendar").css("top", $(this).offset().top - $("#tooltip_calendar").height() / 2);
+                    $("#tooltip_calendar").css("left", $(this).offset().left + 70);
+                    $("#tooltip_calendar").show();
+
+                });
+                $("#calendar-body" + i + " .compromisso").mouseleave(function () {
+                    console.log("mouseleabe");
+                    $("#tooltip_calendar").hide();
+
+                });
+            }
+        }
+
+    });
+
+
+
+
+</script>
+<style>
+    #page-agenda .navbar {
+        background-color: #DBDADA !important;
+    }
+
+    #mobile_navbar {
+        background-color: #DBDADA !important;
+
+    }
+</style>
+
+</html>

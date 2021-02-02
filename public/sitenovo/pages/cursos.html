@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Educaz - Os melhores cursos certificados</title>
+
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/shop-homepage.css" rel="stylesheet">
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+
+    <script src="../js/includeComponents.js"></script>
+    <script src="../js/elementsHandler.js"></script>
+
+</head>
+
+<body id="page-cursos">
+    <header>
+        <div data-include="topnav"></div>
+
+    </header>
+
+    <div class="banner-header">
+        <img src="../img/cursos_online_header_background.png" />
+        <div class="container header">
+            <div id="cursos_header">
+                <h2>Cursos online</h2>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+
+
+    <section id="section_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3" id="sidebar" data-include="sidebar"></div>
+                <div class="col-lg-9">
+                    <div class="row sort-order">
+                        <div class="col-lg-2 col-md-2 col-sm-12 col-12" id="sort">
+                            <div class="dropdown">
+                                <button href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ordenar
+                                    <span class="caret"></span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <form id="form_curso_sort_order_dropdown">
+                                        <div class="radio">
+                                            <input id="sort_az" name="sort-az" type="radio" checked>
+                                            <label for="sort_az" class="radio-label">A-Z</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input id="sort_za" name="sort-az" type="radio">
+                                            <label for="sort_za" class="radio-label">Z-A</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input id="sort_mais_vendidos" name="sort-other" type="radio" checked>
+                                            <label for="sort_mais_vendidos" class="radio-label">mais vendidos</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input id="sort_mais_recente" name="sort-other" type="radio">
+                                            <label for="sort_mais_recente" class="radio-label">mais recentes</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input id="sort_promocoes" name="sort-other" type="radio">
+                                            <label for="sort_promocoes" class="radio-label">promoções</label>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 col-12">
+                            <div class="dropdown">
+                                <button href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">preço
+                                    <span class="caret"></span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <form id="form_curso_sort_price_dropdown">
+                                        <div class="range-slider">
+                                            <input id="rs-range-line" class="rs-range" type="range" value="0" min="0" max="200">
+                                            <span id="rs-bullet" class="rs-label">0</span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 col-12">
+                            <button>trilha do conhecimento</button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 col-12 search-div">
+                            <form id="form_curso_sort_order_search">
+                                <input placeholder="pesquisar" />
+                                <span class="icon-search"></span>
+                            </form>
+                        </div>
+                        <div class="col-lg-1 col-md-6 col-sm-6 col-6 view-options hide-mobile">
+                            <button onclick="activate('list')" style="background-color:transparent;color: #DBDADA;font-size:25px;margin-top: -5px;">
+                                <span class="icon-hamburger-menu-1"></span>
+                            </button>
+                        </div>
+                        <div class="col-lg-1 col-md-6 col-sm-6 col-6 hide-mobile">
+                            <button onclick="activate('grid')" style="background-color:transparent;color: #DBDADA;font-size:25px;margin-top: -5px;">
+                                <span id="button_grid" class="icon-plus-filled active"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="row banner" id="adicionados_recentemente_mobile">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            Adicionados recentemente
+                        </div>
+                    </div>
+
+                    <div id="cursos_adicionados_recentemente" class="grid slickear row">
+                        <div href="" id="cursos_adicionados_recentemente_link" class="outter">
+                            <div class="box-shadow cursos-first-square red-background item">
+                                <span class="title">Cursos adicionados recentemente</span>
+                                <span class="call">confira!</span>
+                            </div>
+                        </div>
+
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#ED1E24" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Novidade
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                   c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                   c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                   C11.034,20.796,10.972,20.817,10.909,20.817z" />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                   c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                   c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                   C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                   c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                   c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                   l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z" />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#ED1E24" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Novidade
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                       c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                       c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                       C11.034,20.796,10.972,20.817,10.909,20.817z" />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                       c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                       c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                       C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                       c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                       c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                       l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z" />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#ED1E24" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Novidade
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                           c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                           c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                           C11.034,20.796,10.972,20.817,10.909,20.817z"
+                                                            />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                           c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                           c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                           C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                           c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                           c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                           l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z"
+                                                            />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#ED1E24" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Novidade
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                               c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                               c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                               C11.034,20.796,10.972,20.817,10.909,20.817z"
+                                                            />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                               c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                               c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                               C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                               c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                               c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                               l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z"
+                                                            />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#ED1E24" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Novidade
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                                   c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                                   c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                                   C11.034,20.796,10.972,20.817,10.909,20.817z"
+                                                            />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                                   c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                                   c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                                   C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                                   c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                                   c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                                   l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z"
+                                                            />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="absolute">
+                        <a id="adicionados_recentemente_more_link" href="" class="col-lg-12 col-md-12 col-sm-12 see-others">
+                            <span>
+                                <i class="icon-next-filled"></i> Veja outros cursos adicionados recentemente</span>
+                        </a>
+
+                    </div>
+
+                    <div class="row banner" id="promocoes_imperdiveis_mobile">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            Promoções imperdíveis
+                        </div>
+                    </div>
+                    <div id="cursos_promocoes" class="row grid slickear">
+                        <div href="" id="cursos_promocoes_link" class="outter">
+                            <div class="box-shadow cursos-first-square orange-background item">
+                                <span class="title">Promoções por tempo limitado</span>
+                                <span class="call">aproveite!</span>
+                            </div>
+                        </div>
+
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#F2652A" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Promoção
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                       c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                       c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                       C11.034,20.796,10.972,20.817,10.909,20.817z" />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                       c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                       c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                       C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                       c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                       c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                       l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z" />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#F2652A" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Promoção
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                       c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                       c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                       C11.034,20.796,10.972,20.817,10.909,20.817z" />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                       c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                       c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                       C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                       c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                       c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                       l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z" />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#F2652A" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Promoção
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                       c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                       c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                       C11.034,20.796,10.972,20.817,10.909,20.817z" />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                       c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                       c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                       C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                       c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                       c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                       l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z" />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#F2652A" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Promoção
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                       c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                       c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                       C11.034,20.796,10.972,20.817,10.909,20.817z" />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                       c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                       c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                       C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                       c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                       c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                       l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z" />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#F2652A" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Promoção
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                       c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                       c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                       C11.034,20.796,10.972,20.817,10.909,20.817z" />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                       c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                       c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                       C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                       c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                       c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                       l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z" />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="absolute">
+                        <a id="promocoes_more_link" href="" class="col-lg-12 col-md-12 col-sm-12 see-others">
+                            <span>
+                                <i class="icon-next-filled"></i> Veja mais promoções</span>
+                        </a>
+
+                    </div>
+                    <div class="row banner" id="mais_vendidos_mobile">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            Cursos mais vendidos
+                        </div>
+                    </div>
+
+                    <div id="cursos_mais_vendidos" class="row grid slickear">
+                        <div href="" id="cursos_mais_vendidos_link" class="outter">
+                            <div class="box-shadow cursos-first-square yellow-background item">
+                                <span class="title">Cursos mais vendidos</span>
+                                <span class="call">acompanhe!</span>
+                            </div>
+                        </div>
+
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#F1CE23" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Mais vendido
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                           c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                           c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                           C11.034,20.796,10.972,20.817,10.909,20.817z"
+                                                            />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                           c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                           c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                           C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                           c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                           c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                           l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z"
+                                                            />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#F1CE23" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Mais vendido
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                           c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                           c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                           C11.034,20.796,10.972,20.817,10.909,20.817z"
+                                                            />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                           c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                           c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                           C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                           c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                           c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                           l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z"
+                                                            />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#F1CE23" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Mais vendido
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                           c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                           c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                           C11.034,20.796,10.972,20.817,10.909,20.817z"
+                                                            />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                           c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                           c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                           C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                           c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                           c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                           l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z"
+                                                            />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#F1CE23" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Mais vendido
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                           c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                           c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                           C11.034,20.796,10.972,20.817,10.909,20.817z"
+                                                            />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                           c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                           c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                           C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                           c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                           c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                           l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z"
+                                                            />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding-5">
+                            <div href="" class="outter">
+                                <div class="box-shadow course-card item">
+                                    <div class="card-inner">
+                                        <a href="" class="course-link">
+                                            <div class="card-image">
+                                                <img src="../img/course_img_2.png" width="auto" height="auto" />
+                                                <span class="card-sticker">
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        width="70px" height="27.691px" viewBox="0 0 90 27.691" enable-background="new 0 0 90 27.691"
+                                                        xml:space="preserve">
+                                                        <polygon fill="#F1CE23" points="90,0 0,0 0,13.846 0,27.691 90,27.691 82.212,13.846 " />
+                                                        <foreignObject x="3" y="1" width="80" height="20">
+                                                            <span xmlns="http://www.w3.org/1999/xhtml">
+                                                                Mais vendido
+                                                            </span>
+                                                        </foreignObject>
+                                                    </svg>
+                                                </span>
+                                                <a href="" class="card-favorite">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.818px"
+                                                        height="21.518px" viewBox="0 0 21.818 21.518" enable-background="new 0 0 21.818 21.518"
+                                                        xml:space="preserve">
+
+                                                        <g>
+                                                            <path fill="#FFFFFF" d="M10.909,20.817c-0.063,0-0.127-0.021-0.178-0.063C10.321,20.425,0.7,12.602,0.7,6.236
+                                                                           c0-2.785,1.434-4.854,3.74-5.4c2.432-0.574,5.021,0.709,6.463,3.146c1.58-2.775,4.383-3.572,6.418-3.109
+                                                                           c2.801,0.638,3.797,3.188,3.797,5.364c0,2.686-1.693,5.949-5.033,9.701c-2.471,2.771-4.973,4.797-4.998,4.816
+                                                                           C11.034,20.796,10.972,20.817,10.909,20.817z"
+                                                            />
+                                                            <path style="fill:#F2652A" d="M10.909,21.518c-0.231,0-0.455-0.082-0.63-0.229C9.873,20.963,0,12.963,0,6.236C0,3.11,1.64,0.779,4.279,0.155
+                                                                           c2.359-0.556,4.963,0.485,6.615,2.579c1.311-1.698,3.228-2.685,5.299-2.685c0.44,0,0.872,0.047,1.283,0.141
+                                                                           c3.201,0.729,4.342,3.602,4.342,6.047c0,2.862-1.753,6.283-5.211,10.167c-2.503,2.808-5.07,4.888-5.094,4.906
+                                                                           C11.349,21.441,11.13,21.518,10.909,21.518z M5.61,1.4c-0.341,0-0.68,0.04-1.009,0.117C2.627,1.984,1.4,3.793,1.4,6.236
+                                                                           c0,5.499,7.956,12.452,9.509,13.756c0.693-0.583,2.677-2.304,4.653-4.521c3.222-3.62,4.855-6.727,4.855-9.235
+                                                                           c0-1.905-0.854-4.136-3.252-4.682c-0.31-0.07-0.637-0.106-0.973-0.106c-1.905,0-3.655,1.076-4.682,2.879l-0.597,1.048
+                                                                           l-0.614-1.038C9.229,2.526,7.432,1.4,5.61,1.4z"
+                                                            />
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h4 class="course-title">Concurso Público-Licitações e Contratos Administrativos</h4>
+                                        <p class="teacher-name">Sergio Nogueira</p>
+                                        <div class="course-payment-info row">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 course-price-call">
+                                                <span class="course-price orange-font-color">R$ 12,00</span>
+                                                <br/>
+                                                <a href="" class="assinatura-link">
+                                                    <span class="course-call orange-font-color">Faça sua assinatura</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-2 course-share">
+                                                <a href="" class="course-share-link">
+                                                    <span class="icon-share orange-font-color"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="absolute">
+                        <a id="mais_vendidos_link" href="" class="col-lg-12 col-md-12 col-sm-12 see-others">
+                            <span>
+                                <i class="icon-next-filled"></i> Veja outros cursos mais vendidos</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <div data-include="footer"></div>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+<script>
+    var rangeSlider = document.getElementById("rs-range-line");
+    var rangeBullet = document.getElementById("rs-bullet");
+    rangeSlider.addEventListener("input", showSliderValue, false);
+
+    function showSliderValue() {
+        rangeBullet.innerHTML = rangeSlider.value;
+        var bulletPosition = (rangeSlider.value / rangeSlider.max);
+        rangeBullet.style.left = (bulletPosition * 80) + "px";
+    }
+
+    function activate(el) {
+        console.log(el);
+        if (el == 'grid') {
+            $(".list").addClass('grid');
+            $(".list").removeClass('list');
+            $("#button_grid").addClass('active');
+            $(".view-options .icon-hamburger-menu-1").removeClass('active');
+        } else {
+            $(".grid").addClass('list');
+            $(".grid").removeClass('grid');
+            $("#button_grid").removeClass('active');
+            $(".view-options .icon-hamburger-menu-1").addClass('active');
+        }
+    }
+
+    var interval = setInterval(function () {
+        if ($("#topnav_cursos").length) {
+            $("#topnav_cursos").addClass("orange-font-color");
+            clearInterval(interval);
+        }
+    }, 100);
+    var slickeado = false;
+    var cursos1 = $("#cursos_adicionados_recentemente_link");
+    var cursos2 = $("#cursos_promocoes_link");
+    var cursos3 = $("#cursos_mais_vendidos_link");
+    function conditionalSlick() {
+        if ($(window).width() <= 991 && !slickeado) {
+            slickeado = true;
+            console.log("entrei");
+            $("#cursos_adicionados_recentemente_link").remove();
+            $("#cursos_promocoes_link").remove();
+            $("#cursos_mais_vendidos_link").remove();
+            $(".slickear").slick(
+                {
+                    infinite: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    responsive: [
+                        {
+                            breakpoint: 485,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                infinite: false,
+                                dots: false
+                            }
+                        }
+                    ]
+                }
+            );
+        } else {
+            if ($(window).width() > 991 && slickeado) {
+                $(".slickear").slick('unslick');
+                slickeado = false;
+                $("#cursos_adicionados_recentemente").prepend(cursos1);
+                $("#cursos_promocoes").prepend(cursos2);
+                $("#cursos_mais_vendidos").prepend(cursos3);
+            }
+        }
+    }
+
+    function resizeBanner() {
+        console.log("aqui");
+        $(".banner").each(function () {
+            $(this).css('width',
+                $(window).width() -
+                parseInt($(".container").css('marginRight')) -
+                parseInt($(".container").css('paddingRight'))
+            );
+
+        });
+
+    }
+
+    resizeBanner();
+    conditionalSlick();
+    $(window).resize(function () {
+        conditionalSlick();
+        resizeBanner();
+    });
+
+</script>
+
+<style>
+    .list .padding-5 {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
+    #mobile_navbar {
+        background-color: rgba(255, 255, 255, .7) !important;
+
+    }
+</style>
+
+</html>
